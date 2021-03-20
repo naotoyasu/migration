@@ -1,3 +1,9 @@
+migrate new create_hello_table
+    ALTER TABLE sampledb.account ADD role varchar(20) comment '権限' AFTER password ;
+migrate up
+migrate down
+
+
 Welcome!
 
 This is an MyBatis Migration repository.  You can specify the repository
